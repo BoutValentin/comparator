@@ -1,0 +1,13 @@
+<header class="flex flex-col items-center justify-center w-full mt-[20px]">
+  <div class="flex flex-row items-center justify-center mb-[25px]">
+    <p class="text-[45px] font-black">Comparator</p>
+  </div>
+  
+  <div class="flex flex-row items-center justify-between w-full max-w-[700px] py-0 px-[15px] border-b-[3px] border-[#c6c6c6]">
+    <p class="p-header-link <%= request.fullpath == root_path ? "p-header-link-active" : "" %>"><%= link_to "Accueil", root_path, class: "" %> </p>
+    <p class="p-header-link <%= request.fullpath == comparaisons_path ? "p-header-link-active" : "" %>"><%= link_to "Dernières Comp", comparaisons_path, class: "" %> </p>
+    <p class="p-header-link <%= request.fullpath == comparaison_random_path ? "p-header-link-active" : "" %>"><%= link_to "Aléatoires", comparaison_random_path, class: "", data: {turbo: "false"} %> </p>
+    <p class="p-header-link <%= request.fullpath == about_path ? "p-header-link-active" : "" %>"><%= link_to "À propos", about_path, class: "" %> </p>
+    <p class="p-header-link <%= request.fullpath == settings_path ? "p-header-link-active" : "" %>"><%= link_to "Paramètres", settings_path, class: "" %> </p>
+  </div>
+</header>

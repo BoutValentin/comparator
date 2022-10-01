@@ -1,0 +1,2 @@
+module ComparatorPostsHelper
+end

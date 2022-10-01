@@ -1,0 +1,20 @@
+<div class="mb-[25px]">
+  <div class="max-w-full max-h-[450px] w-full h-full">
+    <%= image_tag comparator.illustration, class: "w-full h-full object-cover rounded-md" %>
+  </div>
+  <%= link_to comparator do %>
+  <div class="bg-[#f6f4f0] relative mt-[-150px] max-w-[90%] mx-auto pt-[60px] px-[40px] pb-[20px] rounded-md drop-shadow-md">
+    <div class="font-medium text-[#bbbac0] flex flex-row items-center text-[15px]">
+      <p class="mr-[7px]"><%= comparator.author %></p>
+      <span class="w-[15px] h-[3px] bg-[#bbbac0] block rounded-full"></span>
+      <p class="mx-[7px]"><%= l comparator.updated_at, :format => :short %></p>
+    </div>
+    <p class="mt-[20px] text-[#292a40] font-bold text-[40px]"><%= comparator.title%></p>
+    <p class="mt-[20px] text-justify"><%= comparator.abstract %></p>
+
+   
+
+  
+  </div>
+   <% end %>
+</div>
