@@ -1,5 +1,5 @@
 <div class="mb-[25px]">
-  <div class="max-w-full max-h-[450px] w-full h-full">
+  <div class="max-w-full max-h-[450px] w-full h-[450px]">
     <%= image_tag comparator.illustration, class: "w-full h-full object-cover rounded-md" %>
   </div>
   <%= link_to comparator do %>
@@ -10,11 +10,7 @@
       <p class="mx-[7px]"><%= l comparator.updated_at, :format => :short %></p>
     </div>
     <p class="mt-[20px] text-[#292a40] font-bold text-[40px]"><%= comparator.title%></p>
-    <p class="mt-[20px] text-justify"><%= comparator.abstract %></p>
-
-   
-
-  
+    <p class="mt-[20px] text-justify"><%= comparator.abstract %></p>  
   </div>
    <% end %>
 </div>
