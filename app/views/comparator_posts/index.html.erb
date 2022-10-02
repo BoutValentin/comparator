@@ -1,0 +1,16 @@
+<div class="mb-[25px] w-full mt-[25px]">
+  <div class="max-w-full max-h-[450px] w-full h-[450px]">
+    <%= image_tag @comparator.illustration, class: "w-full h-full object-cover rounded-md" %>
+  </div>
+  <div class="mt-[15px]">
+    <div class="font-medium text-[#bbbac0] flex flex-row items-center text-[13px] md:text-[15px] text-center">
+      <p class="mr-[7px]"><%= @comparator.author %></p>
+      <span class="w-[15px] h-[3px] bg-[#bbbac0] block rounded-full"></span>
+      <p class="mx-[7px]"><%= l @comparator.updated_at, :format => :short %></p>
+    </div>
+    <p class="mt-[15px] text-[#292a40] font-bold text-3xl md:text-[40px]"><%= @comparator.title%></p>
+  </div>
+  <div class="my-[15px] post-content">
+    <%= raw @comparator.body %>
+  </div>
+</div>

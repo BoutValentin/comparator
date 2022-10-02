@@ -34,3 +34,23 @@ html {
 .pagination span.current {
   font-weight: 900;
 }
+
+.post-content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.post-content figure {
+  margin: 20px 0;
+}
+
+.post-content figure img{
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.post-content figcaption {
+  text-align: center;
+}

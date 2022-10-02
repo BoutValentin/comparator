@@ -9,7 +9,7 @@ class ComparatorPostResource < Avo::BaseResource
   field :title, as: :text, required: true, placeholder: "Titre de l'article"
   field :illustration, as: :file, is_image: true, required: true
   field :abstract, as: :textarea, required: true, placeholder: "Un résumé de la comparaison"
-  field :body, as: :trix, required: true
+  field :body, as: :trix, required: true, attachment_key: :trix_attachments, hide_attachment_filename: true, hide_attachment_filesize: true
   field :author, as: :text, required: true, placeholder: "Nom de l'auteur"
   # add fields here
 end

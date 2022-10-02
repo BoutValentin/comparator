@@ -2,4 +2,10 @@
   <%= render partial: "comparator_posts/comparator", locals: { comparator: @comparators.first } %>
   <p class="title mb-[15px]">À la une</p>
   <%= render partial: "comparator_posts/three_comparators", locals: { comparators: @comparators[1..] } %>
+  <p class="title my-[15px]">Le Comparateur, c'est quoi ?</p>
+  <div class="text-justify font-light">
+  <p class="my-[5px]">Site Web <span class="font-medium">humoristique</span> créé en 2022, Le Comparateur cherche à créer du contenu <span class="font-medium">divertissant</span> (parfois sous fond de vérités) et <span class="font-medium">agréable</span>.</p>
+  <p class="my-[5px]">Le Comparateur ne cherche pas à nuire ou autres, mais simplement à faire <span class="font-medium">rire</span> ses lecteurs à travers des comparaisons <span class="font-medium">drôles</span> et les plus respectueuses possible.</p>
+  <p class="my-[5px]">Si tu <span class="font-medium">apprécies</span> Le Comparateur, penses à nous <span class="font-medium"><%= link_to "soutenir", support_path%></span> pour faire perdurer notre projet et nous aider à grandir.</p>
+  </div>
 </div>
