@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   get '/settings', to: 'static_pages#settings', as: 'settings'
   get '/about', to: 'static_pages#about', as: 'about'
 
+  get '/contact', to: 'static_pages#contact', as: "contact"
+  get '/legal', to: 'static_pages#legal', as: "legal"
+  get '/support', to: 'static_pages#support', as: "support"
 end

@@ -11,14 +11,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="p-[15px]">
+  <body class="">
     <div class="notice-alert-container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div>
     <%= render "layouts/header" %>
-    <main class="container flex max-w-[800px] items-center justify-center mx-auto">
+    <main class="container flex max-w-[800px] items-center justify-center mx-auto px-[15px]">
       <%= yield %>
     </main>
+    <%= render "layouts/footer" %>
   </body>
 </html>

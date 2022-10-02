@@ -8,4 +8,16 @@ class StaticPagesController < ApplicationController
 
   def settings
   end
+
+  def legal
+
+  end
+
+  def contact
+
+  end
+
+  def support
+
+  end
 end
