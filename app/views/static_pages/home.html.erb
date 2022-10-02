@@ -1,3 +1,5 @@
 <div class="pt-[20px]">
-  <%= render partial: "comparator_posts/comparator", locals: { comparator: @comparator } %>
+  <%= render partial: "comparator_posts/comparator", locals: { comparator: @comparators.first } %>
+  <p class="title mb-[15px]">À la une</p>
+  <%= render partial: "comparator_posts/three_comparators", locals: { comparators: @comparators[1..] } %>
 </div>

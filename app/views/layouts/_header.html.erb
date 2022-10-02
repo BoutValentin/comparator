@@ -1,9 +1,9 @@
 <header class="flex flex-col items-center justify-center w-full mt-[20px]">
   <div class="flex flex-row items-center justify-center mb-[25px]">
-    <p class="text-[45px] font-black">Comparator</p>
+    <p class="text-[45px] font-black text-center text-[#292a40]">Le Comparateur</p>
   </div>
   
-  <div class="flex flex-row items-center justify-between w-full max-w-[700px] py-0 px-[15px] border-b-[3px] border-[#c6c6c6]">
+  <div class="flex flex-row items-center justify-around flex-wrap w-full max-w-[700px] py-0 px-[15px] border-b-[3px] border-[#c6c6c6]">
     <p class="p-header-link <%= request.fullpath == root_path ? "p-header-link-active" : "" %>"><%= link_to "Accueil", root_path, class: "" %> </p>
     <p class="p-header-link <%= request.fullpath == comparaisons_path ? "p-header-link-active" : "" %>"><%= link_to "Nouveautés", comparaisons_path, class: "" %> </p>
     <p class="p-header-link <%= request.fullpath == comparaison_random_path ? "p-header-link-active" : "" %>"><%= link_to "Aléatoires", comparaison_random_path, class: "", data: {turbo: "false"} %> </p>

@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @comparator = ComparatorPost.all.last
+   @comparators = ComparatorPost.order(created_at: :desc)[..3]
   end
 
   def about

@@ -18,6 +18,7 @@ Avo.configure do |config|
   ## == Authentication ==
   # config.current_user_method = {}
   config.current_user_method = :current_admin
+  config.current_user_resource_name = :admin
   # config.authenticate_with = {}
 
   ## == Authorization ==

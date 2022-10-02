@@ -78,3 +78,5 @@ end
 gem 'avo'
 # This is for managing Admin user simply
 gem 'devise'
+# This is for pagination
+gem 'kaminari'

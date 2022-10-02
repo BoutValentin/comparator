@@ -1,0 +1,5 @@
+<div class="flex flex-wrap justify-around md:justify-start">
+   <% comparators.each do |comparator| %>
+    <%= render partial: "comparator_posts/little_comparator", locals: {comparator: comparator }%>
+  <% end %>
+</div>

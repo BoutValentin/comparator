@@ -32,6 +32,14 @@
 en:
   hello: "Hello world"
 
+  views:
+    pagination:
+      first: "&laquo; Premier"
+      last: "Dernier &raquo;"
+      previous: "&lsaquo; Precèdent"
+      next: "Suivant &rsaquo;"
+      truncate: "&hellip;"
+
   time:
     formats:
       short: "%d %B %Y"

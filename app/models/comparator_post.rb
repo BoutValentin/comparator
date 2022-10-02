@@ -1,4 +1,6 @@
 class ComparatorPost < ApplicationRecord
+  paginates_per 8
+
   has_one_attached :illustration
   
   validate :check_file_presence

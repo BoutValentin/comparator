@@ -16,11 +16,14 @@ module.exports = {
         grow: {
           "0%": { width: "0%", "background-color": "transparent" },
           "30%": { "background-color": "transparent" },
-          "100%": { width: "100%", "background-color": "black" },
+          "100%": { width: "100%", "background-color": "#292a40" },
         },
       },
       animation: {
         grow: " 0.25s ease-in 0s 1 normal forwards running grow",
+      },
+      screens: {
+        mdlg: "825px",
       },
     },
   },

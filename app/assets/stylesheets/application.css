@@ -17,3 +17,20 @@
 html {
   background-color: #f6f4f0;
 }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  flex-wrap: wrap;
+}
+
+.pagination span {
+  margin: 0 10px
+}
+
+.pagination span.current {
+  font-weight: 900;
+}

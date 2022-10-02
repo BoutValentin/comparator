@@ -1,3 +1,5 @@
-<div class="">
-  
+<div class="pt-[20px]">
+    <p class="title mb-[25px]">Retrouve toutes nos comparaisons</p>
+    <%= render partial: "comparator_posts/comparators", locals: { comparators: @comparators } %>
+    <%= paginate @comparators, window: 1 %>
 </div>

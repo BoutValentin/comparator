@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, path: 'creators'
   
   authenticate :admin do
     mount Avo::Engine, at: Avo.configuration.root_path
