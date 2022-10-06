@@ -1,0 +1,7 @@
+<%= link_to support.link, target: "_blank", class: "m-[14px]" do %>
+<div class="active:scale-95 duration-100 text-center bg-[#fff] rounded-md p-3 max-w-[200px] flex flex-col items-center justify-between min-h-[230px]">
+  <p class="font-medium text-[18px]"><%= support.title %></p>
+  <%= image_tag support.illustration, class: "max-w-[150px] my-[20px] max-h-[50px]" %>
+  <p class="font-light"><%= support.body %></p>
+</div>
+<% end %>

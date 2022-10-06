@@ -18,6 +18,6 @@ class StaticPagesController < ApplicationController
   end
 
   def support
-
+    @supports = Support.where(active: true)
   end
 end

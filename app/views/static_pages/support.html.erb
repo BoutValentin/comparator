@@ -1,0 +1,35 @@
+<div class="pt-[20px] w-full">
+  <h1 class="title">Comment nous soutenir ?</h1>
+  <p class="mt-[10px] text-justifiy">Il existe plusieurs manière de nous soutenir dans notres projets (et ceux à venir).</p>
+  <p class="mt-[10px] text-justifiy">Nous sommes un 'média' indépendant qui est en réalité dépendant de vos soutiens pour continuer à vivre. Si vous apréciez nos comparaisons, notre projet ou plus, n'hésitez pas à choisir la manière qui vous convient le mieux pour vous soutenir.</p>
+
+  <div class="mt-[20px]" id="tip">
+    <h3 class="subtitle">La manière la plus simple : nous soutenir via les plateformes de 'Tip'</h3>
+    <p class="mt-[10px] text-justifiy">Que ce soit à travers 1 euros ou plus, chacun de vos dons nous aident à faire perdurer notre projet au fil des années.</p>
+    <div class="flex flex-row flex-wrap items-center justify-around mt-[45px] mb-[30px]">
+      <% @supports.each do |support| %>
+        <%= render partial: "supports/support", locals: {support: support} %>
+      <% end %>
+    </div>
+  </div>
+
+   <div class="mt-[30px]" id="prop_article">
+    <h3 class="subtitle">Une autre manière : nous proposer des articles</h3>
+    <p class="mt-[10px] text-justifiy">Il peut-être compliqué de nous soutenir financièrement pour de nombreuses raisons. Malgrés tout, vous pouvez nous soutenir différement en nous proposant des articles.</p>
+
+    <p class="mt-[10px] text-justify">Pour nous proposer un article, rien de plus simple. Il suffit de nous envoyer un mail sur l'adresse mail <%= link_to "contact@leversus.com", "mailto:contact@leversus.com", class: "font-medium" %> et d'écrire l'article dans le corps de votre email. Vous pouvez avant ou après l'article dans votre mail nous parler de vous (Nom, Prénom, Année de naissance, Pseudonyme pour la publication et autres). Si nous acceptons votre article (dans l'état, hors correction orthographique, grammaticale ou autres), nous publions votre article sur le site web. Avant de nous proposer un article, il est très important de lire les CGU (section proposition d'article) afin de connaître vos droits et les notres.</p>
+
+    <p class="mt-[10px] text-justify">Il est important de noter que nous n'acceptons aucune proposition d'article en pièce jointe (pour des raisons de sécurité). Toute propostion devra donc être rédigé dans le corps de l'email comme indiqué ci-dessus.</p>
+
+    <p class="mt-[10px] text-justify">N'ayez pas peur de nous proposer vos idées ou vos articles et ne désesperait pas si nous n'acceptons pas plusieurs de vos articles. Votre participation nous fait déjà chaud au coeur et nous vous en remercions très fort, que votre article sois accepté ou non ❤️.</p>
+    </div>
+
+  <div class="mt-[30px]" id="share">
+    <h3 class="subtitle">La dernière mais pas des moindres : partager notre site et nos comparaisons</h3>
+    <p class="mt-[10px] text-justifiy">C'est probablement le moyen le plus simple pour nous soutenir. Partager nos comparaisons et notre sites à vos amis, collégues et plus si vous le souhaitez à travers tous les moyens que vous voulez.</p>
+    <p class="mt-[10px] text-justifiy">Nous vous proposons une liste ci-dessous de réseaux sociaux sur lesquels vous pouvez nous suivre et ainsi partager nos articles (et être tenu au courant des nouvelles publications 😉).</p>
+    <div class="mt-[25px]">
+      <%= render partial: "layouts/social_medias" %>
+    </div>
+  </div>
+</div>
