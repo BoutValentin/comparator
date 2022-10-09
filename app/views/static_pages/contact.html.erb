@@ -1,3 +1,16 @@
-<p>
-zizi
-</p>
+<div class="pt-[20px] w-full h-full min-h-[50vh]">
+  <p class="title">Nous contacter</p>
+  <p class="mt-[15px]">Nous sommes toujours prêt à discuter avec toi.</p>
+
+  <p class="font-medium mt-[10px] text-[17px]">Une idée, une envie à nous partager ? Un mot doux à susurrer ? </p>
+  <p class="font-medium mt-[10px] text-[18px]">N'hésitez pas à nous contacter sur notre email <%= link_to "contact@leversus.com", "mailto:contact@leversus.com", class: "underline font-[600]" %></p>
+
+  <p class="mt-[30px] mb-[20px]">Si tu préféres, nous sommes aussi sur les réseaux sociaux :</p>
+  <%= render partial: "layouts/social_medias" %>
+  <p class="mt-[40px]">
+  Dans tous les cas, comme dirait guethenoc : 
+  </p>
+  <div class="flex flex-col items-center justify-center my-[10px]">
+    <%= image_tag "kaamelott-guethenoc.gif", class: "rounded-md"%>
+  </div>
+</div>

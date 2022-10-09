@@ -13,4 +13,10 @@
   <div class="my-[15px] post-content">
     <%= raw @comparator.body %>
   </div>
+  <div class="my-[20px]">
+    <p class="title">Tu as apprécié cet article ?</p>
+    <p class="mt-[10px]">Si tu souhaites nous soutenir, cela ce passe <%= link_to "juste ici, dans notre page de soutien.", support_path, class: "underline" %></p>
+    <p class="mt-[10px] mb-[15px]">N'hésites pas à partager cet article sur les réseaux sociaux. Cela contribue à nous aider et à nous soutenir pour continuer notre aventure.</p>
+    <%= render partial: "layouts/social_medias" %>
+  </div>
 </div>
