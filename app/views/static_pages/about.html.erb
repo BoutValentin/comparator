@@ -1,3 +1,21 @@
-<p>
-À Propos
-</p>
+<div class="pt-[20px] w-full h-full min-h-[50vh]">
+  <h2 class="title">Le Versus, c'est quoi ?</h1>
+  <p class="my-[5px]">Site Web <span class="font-medium">humoristique</span> créé en 2022, Le Versus cherche à créer du contenu <span class="font-medium">divertissant</span> (parfois sous fond de vérités) et <span class="font-medium">agréable</span>.</p>
+  <p class="my-[5px]">Le Versus ne cherche pas à nuire ou autres, mais simplement à faire <span class="font-medium">rire</span> ses lecteurs à travers des comparaisons <span class="font-medium">drôles</span> et les plus respectueuses possible.</p>
+  <p class="my-[5px]">Si tu <span class="font-medium">apprécies</span> Le Versus, penses à nous <span class="font-medium underline"><%= link_to "soutenir", support_path%></span> pour faire perdurer notre projet et nous aider à grandir.</p>
+  
+  <h2 class="title mt-[30px]">L'équipe</h2>
+  <div class="flex flex-col mt-[30px] p-[20px]">
+    <div class="flex flex-col sm:flex-row items-center justify-center">
+      <div class="h-[100px] max-w-[100px] w-full rounded-sm">
+        <%= image_tag "about/valentin.jpg", alt: "La photo de Valentin, Fondateur et créateur de contenu", class: "h-full rounded-full object-cover"%>
+      </div>
+      <div class="mt-[20px]  sm:mt-[0px] ml-[0px] sm:ml-[30px] text-justify">
+        <p class="font-medium text-[18px] mb-[10px] text-[#292a40] text-center sm:text-left"><%= link_to "Valentin BOUT", "https://www.boutvalentin.com", target: "_blank"%></p>
+        <p class="mb-[7px]">Passionné de sport (Beaucoup d'escalade 🧗🏻‍♂️, de la rando 🥾, de la callisthénie en extérieur 💪, et plein d'autres encore 🏄🏻‍♂️, 🏂, 🚣🏻‍♂️, ... 🗺) et de la nature 🍃.</p>
+        <p class="mb-[7px]">Fondateur de <%= link_to "Le Versus", root_path, class: "underline" %> et d'autres projet innovant, j'aspire à  partager mes trouvailles et ce que je sais faire (ou pense) pour aider les autres 🤝.</p>
+        <p class="mb-[7px]">À travers <%= link_to "Le Versus", root_path, class: "underline" %>, j'écris et vous partage ce qui m'amuse, sans filtre pour rester le plus honnete 😇</p>
+      </div>
+    </div>
+  </div>
+</div>
